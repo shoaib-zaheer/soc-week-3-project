@@ -1,10 +1,18 @@
-console.log('-- load & test choices --');
+console.log('\n-- load & test choices --\n');
 debugger; // step through loading & testing
 
 // first argument is any string
 // second argument is what to do to that string
-function choices(str, option) {
-
+function choices(str, option){ // not a function
+  if (option === 'big'){
+      return str.toUpperCase();
+  }  else if (option === 'small'){
+      return str.toLowerCase();
+  } else if (option === 'slim'){
+      return str.trim();
+  } else {
+      return 'invalid option';
+  }
 }
 
 // declare and evaluate test cases for choices
@@ -34,28 +42,28 @@ for (let test of choicesTests) {
 console.log(choicesTests);
 
 
-// declare handler
-function choicesHandler() {
-  debugger; // step through user actions
+// // // declare handler
+// function choicesHandler() {
+//   debugger; // step through user actions
 
-  // read & process user input
+// //   // read & process user input
 
-  // execute core logic
+// //   // execute core logic
 
-  // display result to user
+// //  display result to user
 
-  // log action for developer
-  console.log('\n-- choices --');
-  // user inputs
-  // result
-}
+// //   // log action for developer
+//   console.log('\n-- choices --');
+// //   // user inputs
+// //   // result
+// // }
 
-// attach handler to choices button with an event listener
-document.getElementById('choices-button').addEventListener('click', choicesHandler);
-
-
+// // // attach handler to choices button with an event listener
+// document.getElementById('choices-button').addEventListener('click', choicesHandler);
 
 
-/* looking for a hint?
-  each option can be solved in one line
-*/
+
+
+// // /* looking for a hint?
+// //   each option can be solved in one line
+// // */

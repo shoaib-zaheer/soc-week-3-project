@@ -3,7 +3,17 @@ debugger; // step through loading & testing
 
 // reapeat each character in a string, without changing the order
 function repeatCharacters(str, repetitions) {
-
+  if ( repetitions === 2){
+    return str.double();
+  } else if (repetitions === 3) {
+    return str.repeat(3);
+  } else if (repetitions === 0){
+    return str, '';
+  } else if (repetitions === 1){
+    return str, '...';
+  } else{
+    return str.Math.random();
+  } 
 }
 
 // declare and evaluate test cases for repeatCharacters
